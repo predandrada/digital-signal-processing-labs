@@ -1,0 +1,28 @@
+Ex 1:
+ incarcam semnalul, calculam dft cu fft si cu suma 
+ afisam partea pozitiva de la spectru
+
+SNR: puterea semnalului (selectam din spectru intre -9 si 9 si facem suma) 
+si a zgomotului (consideram ca e zgomot in toate comp de frecventa, consideram ca avem zgomot alb)
+zgomotul alb contine cat mai multe frecvente (tot spectrul)
+
+calculam SNR cu formula lui marios & cu dB
+
+fft -> ce zgomot punem pe 0? pastram semnalul de interes
+
+facem cu ifft -> obtinem un semnal mai curat
+
+
+Ex 2:
+- la fel, cu diferenta ca la ex 1 aveam componenta de frecventa potrivita la fix 
+
+- aici avem fs = 8000hz si N = 128 de esantioane
+- trb sa mai aplicam k*fs/N
+- poate pica la examen (la indexul k ce frecventa avem?)
+- in rest facem aceiasi pasi 
+- filtram secventele ce depasesc 500Hz (le facem 0 & le pastram si pe cele negative)
+- putem asculta cu sound pt verificare
+
+Ex 3: 
+- fourier pe imagini 
+- 

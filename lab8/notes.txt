@@ -1,0 +1,25 @@
+%% Ex 1
+- creare & adunare
+- facem cu fft pt dft & plotam
+- f1 = 0  si vedem semnalul la 2kHz, daca dam plot vedem ca avem 2 bete simetrice, 1000 si 2000 pt fiecare semnal si corespondentul pe negativ (6000 si 7000)
+- la 2500 hz apare dft leakage
+- ca sa scapam marim nr de esantioane (adaugam zerouri printr-un vector, le punem la final)
+- pe primele 8 esantioane primele sunt zerouri
+- valorile sinc ului au 0 => nu se vad 
+
+%% Ex 2
+- folosim ferestre
+- cu zero padding nu o sa mearga 
+- inmultim semnalul cu o fereastra (element cu element)
+- dupa inmultire facem iar fft
+- vedem spectrul altfel
+- trb sa vedem niste note pe la 400 hz (de cautat ce note sunt)
+
+%% Ex 3 
+- continuare pt 2 
+- la fel, numai ca avem un semnal mai lung 
+
+
+%% Proiect
+- inainte de vacanta trebuie prezentata o parte din implementare
+- 
