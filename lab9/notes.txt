@@ -1,0 +1,47 @@
+%% Ex 1 
+
+figure;
+plot(x);
+title('Ex 1 -- x');
+
+figure;
+plot(y);
+title('Ex 1 -- y');
+
+4) se obtine un FIR filter -- finite impulse response
+In signal processing, a finite impulse response filter is a filter whose impulse response is of finite duration, because it settles to zero in finite time. This is in contrast to infinite impulse response filters, which may have internal feedback and may continue to respond indefinitely.
+
+Finite impulse response (FIR) filters are nonrecursive filters: The output depends only on a history of input values.
+
+%% Ex 2
+
+- N = 256 elemente, reprezentând spectrul de frecvență al unui filtru trece-jos
+- frecvență de cut-off de fs/16
+- totul înainte de fs/16 trebuie sa treacă
+- totul mai sus trebuie sa fie oprit
+- spectru simetric => 2 treshholds?
+
+pana la 16 bagam 1, dupa 0 si de la N-16 iar 1
+ar trebui sa obtinem un sinc
+
+treb selectate 65 de elemente din centru
+prima fereastra e una cu 1(functia aia ones = rectangulara)
+
+ones * sinc pe 65 de elemente
+aplicam fft pe el si vedem ca nu mai e "asa" ideal
+
+la 5 e la fel cu rectangulara numai ca aplicam blackman
+
+la ultimul luam sinusoida de la primul si facem conv cu blackman si observam ca sinusoida aia e filtrata
+
+!!!
+FIR = filtre cu raspuns finit la impuls
+IIR = ... infinit la impuls
+
+FIR depinde numai de intrari anterioare (doar de x) (y(n))
+in caz ca ne da ecuatie cu z in Z
+
+IIR depinde si de iesiri! (y(n-1), y(n-2))
+
+
+semnale convoluted -> sunt inmultite in frecventa
